@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E90324222270B81D00047CD0 /* CountingSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90324212270B81D00047CD0 /* CountingSort.swift */; };
+		E91C6D48229A9DDF003CCDF1 /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C6D47229A9DDF003CCDF1 /* SortViewController.swift */; };
 		E9304E252253BCFE00971FDE /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9304E242253BCFE00971FDE /* SelectionSort.swift */; };
 		E9304E272253C02000971FDE /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9304E262253C02000971FDE /* MergeSort.swift */; };
 		E9304E2922579FFF00971FDE /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9304E2822579FFF00971FDE /* BubbleSort.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		E90324212270B81D00047CD0 /* CountingSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingSort.swift; sourceTree = "<group>"; };
+		E91C6D47229A9DDF003CCDF1 /* SortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
 		E9304E242253BCFE00971FDE /* SelectionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
 		E9304E262253C02000971FDE /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		E9304E2822579FFF00971FDE /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				E982E1A2224FC11200A6247D /* Assets.xcassets */,
 				E982E1A4224FC11200A6247D /* LaunchScreen.storyboard */,
 				E982E1A7224FC11200A6247D /* Info.plist */,
+				E91C6D47229A9DDF003CCDF1 /* SortViewController.swift */,
 			);
 			path = algphorithimSample;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			files = (
 				E982E19E224FC11000A6247D /* ViewController.swift in Sources */,
 				E982E1BD224FC13D00A6247D /* QuickSort.swift in Sources */,
+				E91C6D48229A9DDF003CCDF1 /* SortViewController.swift in Sources */,
 				E9304E2B2257A39200971FDE /* InsertionSort.swift in Sources */,
 				E982E19C224FC11000A6247D /* AppDelegate.swift in Sources */,
 				E90324222270B81D00047CD0 /* CountingSort.swift in Sources */,
