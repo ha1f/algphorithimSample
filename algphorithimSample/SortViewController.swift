@@ -15,10 +15,12 @@ final class SortViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textField.delegate = self
+        textField.addTarget(self, action: #selector(handleChange(_:)), for: .editingChanged)
     }
     
-    func handleChange(_ text: String) {
-        label.text = text
+    @objc
+    func handleChange(_ textField: UITextField) {
+        textField.text = textField.text.map { String($0.prefix(3)) }
     }
 }
 
@@ -26,7 +28,6 @@ extension SortViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let currentText = textField.text ?? ""
         let newText = (currentText as NSString).replacingCharacters(in: range, with: string)
-        handleChange(newText)
         return true
     }
 }
