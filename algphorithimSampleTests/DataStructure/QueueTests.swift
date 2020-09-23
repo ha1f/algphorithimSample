@@ -2,7 +2,7 @@
 //  QueueTests.swift
 //  algphorithimSampleTests
 //
-//  Created by Yamaguchi Tomoki on 2020/09/20.
+//  Created by ha1f on 2020/09/20.
 //  Copyright © 2020 はるふ. All rights reserved.
 //
 
