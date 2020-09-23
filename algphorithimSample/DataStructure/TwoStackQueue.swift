@@ -2,7 +2,7 @@
 //  TwoStackQueue.swift
 //  algphorithimSample
 //
-//  Created by Yamaguchi Tomoki on 2020/09/20.
+//  Created by ha1f on 2020/09/20.
 //  Copyright © 2020 はるふ. All rights reserved.
 //
 
@@ -10,8 +10,8 @@ import Foundation
 
 /// 2つのstackでキューを作る
 class TwoStackQueue<Element>: QueueProtocol {
-    private var stack1: Stack<Element> = .init()
-    private var stack2: Stack<Element> = .init()
+    private var stack1: Stack<Element> = Stack()
+    private var stack2: Stack<Element> = Stack()
 
     private var isInverted: Bool = false
 

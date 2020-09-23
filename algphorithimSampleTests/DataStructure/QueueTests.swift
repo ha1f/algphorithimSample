@@ -11,9 +11,10 @@ import XCTest
 @testable import algphorithimSample
 
 class QueueTests: XCTestCase {
-
-    func testQueue() {
-        var queue = Queue<Int>()
+    private func _testIntQueue<Q: QueueProtocol>(
+        queueBuilder: @autoclosure () -> Q
+    ) where Q.Element == Int {
+        var queue = queueBuilder()
         queue.add(0)
         queue.add(1)
         queue.add(2)
@@ -28,19 +29,15 @@ class QueueTests: XCTestCase {
         XCTAssertNil(queue.remove())
     }
 
+    func testQueue() {
+        _testIntQueue(queueBuilder: Queue<Int>())
+    }
+
     func testTwoStackQueue() {
-        let queue = TwoStackQueue<Int>()
-        queue.add(0)
-        queue.add(1)
-        queue.add(2)
-        queue.add(3)
-        XCTAssertEqual(queue.remove(), 0)
-        XCTAssertEqual(queue.remove(), 1)
-        queue.add(4)
-        XCTAssertEqual(queue.remove(), 2)
-        XCTAssertEqual(queue.remove(), 3)
-        XCTAssertEqual(queue.remove(), 4)
-        XCTAssertNil(queue.remove())
-        XCTAssertNil(queue.remove())
+        _testIntQueue(queueBuilder: TwoStackQueue<Int>())
+    }
+
+    func testThreadSafeQueue() {
+        _testIntQueue(queueBuilder: ThreadSafeQueue<Int>())
     }
 }

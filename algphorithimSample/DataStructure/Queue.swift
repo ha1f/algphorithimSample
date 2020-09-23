@@ -34,11 +34,3 @@ struct Queue<Element>: QueueProtocol {
         return _elements.removeFirst()
     }
 }
-
-protocol QueueProtocol {
-    associatedtype Element
-    var isEmpty: Bool { get }
-    mutating func add(_ element: Element)
-    mutating func remove() -> Element?
-    func peek() -> Element?
-}
