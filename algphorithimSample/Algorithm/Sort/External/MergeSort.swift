@@ -8,8 +8,10 @@
 
 import Foundation
 
-private func _merge<S: Sequence>(into array1: inout [Int], _ array2: S) where S.Element == Int  {
-    var length = array1.count
+/// ２つのソート済みのArrayをあわせる。
+/// array1にarray2を混ぜる。
+private func _merge<S: Sequence, Element: Comparable>(into array1: inout [Element], _ array2: S) where S.Element == Element {
+    var length = array1.count // リアルタイムのarray1の長さ
     var leftIndex: Int = 0
     array2.forEach { element in
         while leftIndex < length {

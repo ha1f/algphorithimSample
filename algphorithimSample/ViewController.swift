@@ -22,20 +22,20 @@ class ViewController: UIViewController {
 //        sorter2.sort()
 //        print(sorter2.array)
         
-        var array3 = [5, 5, 3, 3, 1, 10, 2, 4, 3, 5, 4]
-        print(array3)
-        quickSort(&array3)
-        print(array3)
-        
-        var array2 = [5, 3]
-        print(array2)
-        quickSort(&array2)
-        print(array2)
-        
-        var array1 = [5]
-        print(array1)
-        quickSort(&array1)
-        print(array1)
+//        var array3 = [5, 5, 3, 3, 1, 10, 2, 4, 3, 5, 4]
+//        print(array3)
+//        quickSort(&array3)
+//        print(array3)
+//
+//        var array2 = [5, 3]
+//        print(array2)
+//        quickSort(&array2)
+//        print(array2)
+//
+//        var array1 = [5]
+//        print(array1)
+//        quickSort(&array1)
+//        print(array1)
         
 //        print(quickSort([5, 5, 3, 3, 1, 10, 2, 4, 3, 5, 4]))
         
@@ -43,13 +43,16 @@ class ViewController: UIViewController {
 //        selectSort(&array1)
 //        print(array1)
 //
-//        print(mergeSort([5, 3, 1, 10, 2, 4, 3]))
+        print(mergeSort([5, 3, 1, 10, 2, 4, 3]))
+        print(mergeSort([5, 3]))
 //
 //        var array2 = [5, 3, 1, 10, 2, 4, 3]
 //        bubbleSort(&array2)
 //        print(array2)
 //
 //        print(insertSort([5, 3, 1, 10, 2, 4, 3]))
+
+
     }
 
 
