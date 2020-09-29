@@ -11,9 +11,11 @@ import Foundation
 /// 挿入ソート
 /// 左から順にinsertによって、ソートされた範囲を広げていく
 func insertionSort(_ numbers: inout [Int]) {
+    // 0<=index<iまではソートされている状態で、i番目の数をどこに挿入するかを決める
     (0..<numbers.count)
         .forEach { i in
             let value = numbers[i]
+            // i番目の数をどこに挿入するかを探す
             // TODO: use binary-search to find larger value.
             for j in 0..<i {
                 if numbers[j] > value {
@@ -26,7 +28,7 @@ func insertionSort(_ numbers: inout [Int]) {
     }
 }
 
-/// non-internal version
+/// external version
 //func insertionSort(_ numbers: [Int]) -> [Int] {
 //    let numbersCount = numbers.count
 //    var result = [Int]()

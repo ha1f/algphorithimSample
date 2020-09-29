@@ -46,6 +46,7 @@ private func _quickSort(_ numbers: inout [Int], start: Int, end: Int) {
 }
 
 /// クイックソート
+/// pivotより大きい組を右に、小さい組を左に分ける作業を再帰的に行う
 func quickSort(_ numbers: inout [Int]) {
     guard !numbers.isEmpty else {
         return

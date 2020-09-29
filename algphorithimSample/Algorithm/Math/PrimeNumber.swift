@@ -9,6 +9,7 @@
 import Foundation
 
 /// エラトステネスの篩
+/// maximum未満の素数を列挙する
 final class EratosthenesSieve {
     private var _solved: Bool
     private var possibles: [Int]
@@ -16,7 +17,7 @@ final class EratosthenesSieve {
 
     init(maximum: Int) {
         if maximum > 2 {
-            // TODO: この段階で余計なやつを削っておく(6n +- 1など)
+            // TODO: この段階で余計なやつを削っておく(6n +- 1などにする)
             // popの効率のため、逆順にしておく
             possibles = (2..<maximum).reversed()
             primes = []

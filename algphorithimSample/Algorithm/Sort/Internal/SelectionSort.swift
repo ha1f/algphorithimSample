@@ -9,15 +9,15 @@
 import Foundation
 
 /// 選択ソート
-/// 最小から順番に探して、並べていく
+/// 残りの中からの最小を順番に探して、並べていく
 func selectionSort(_ numbers: inout [Int]) {
     let numbersCount = numbers.count
+    // currentOffsetより左側がソートされた状態になる
     for currentOffset in (0..<(numbersCount - 1)) {
-        // we cannot use enumerated() because we have to read latest value.
+        // we cannot use enumerated() because we have to read from latest collection.
         var minimum = (offset: currentOffset, element: numbers[currentOffset])
         
-        // seek right part
-        // TODO: use binary-search
+        // seek right part to find the minimum value to place at currentOffset.
         for index in (currentOffset+1)..<numbersCount {
             let element = numbers[index]
             if element < minimum.element {
