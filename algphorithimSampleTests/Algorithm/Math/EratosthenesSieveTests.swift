@@ -12,12 +12,12 @@ import XCTest
 @testable import algphorithimSample
 
 final class EratosthenesSieveTests: XCTestCase {
-    func testPerformance() {
-        measure {
-            let sieve = EratosthenesSieve(maximum: 50000)
-            _ = sieve.solve()
-        }
-    }
+//    func testPerformance() {
+//        measure {
+//            let sieve = EratosthenesSieve(maximum: 50000)
+//            _ = sieve.solve()
+//        }
+//    }
 
     func testSolve() {
         let sieve = EratosthenesSieve(maximum: 100)

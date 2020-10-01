@@ -1,5 +1,5 @@
 //
-//  PrimeNumber.swift
+//  EratosthenesSieve.swift
 //  algphorithimSample
 //
 //  Created by ha1f on 2020/09/25.
