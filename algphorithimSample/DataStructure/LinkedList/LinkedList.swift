@@ -142,7 +142,7 @@ final class LinkedList<Element> {
         } else {
             // appendには非対応
             guard let nextNode = getNode(at: index) else {
-                assertionFailure("Invalid index")
+                assertionFailure("Invalid index for insert: \(index)")
                 return
             }
             let previousNode = nextNode.previous

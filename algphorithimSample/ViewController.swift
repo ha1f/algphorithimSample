@@ -45,8 +45,12 @@ class ViewController: UIViewController {
 //
 
         print(MergeSort().sort([5, 3, 1, 10, 2, 4, 3]))
-        print(MergeSort().sort([5, 3]))
-        print(MergeSort().sort([3, 5, 1, 10, 2, 4, 3]))
+        print(HeapSort().sort(elements: [5, 3, 1, 10, 2, 4, 3]))
+        
+
+//        print(MergeSort().sort([5, 3, 1, 10, 2, 4, 3]))
+//        print(MergeSort().sort([5, 3]))
+//        print(MergeSort().sort([3, 5, 1, 10, 2, 4, 3]))
 //
 //        var array2 = [5, 3, 1, 10, 2, 4, 3]
 //        bubbleSort(&array2)

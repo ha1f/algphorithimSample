@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A2D42EB252488D200F241BA /* BinaryHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D42EA252488D200F241BA /* BinaryHeap.swift */; };
+		7A2D42ED252581CB00F241BA /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D42EC252581CB00F241BA /* HeapSort.swift */; };
 		7A4BAEC825164C9A00B71E32 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BAEC725164C9A00B71E32 /* Stack.swift */; };
 		7A4BAECA25164F0A00B71E32 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BAEC925164F0A00B71E32 /* Queue.swift */; };
 		7A4BAECD2516554B00B71E32 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BAECC2516554B00B71E32 /* QueueTests.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A2D42EA252488D200F241BA /* BinaryHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryHeap.swift; sourceTree = "<group>"; };
+		7A2D42EC252581CB00F241BA /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		7A4BAEC725164C9A00B71E32 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		7A4BAEC925164F0A00B71E32 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		7A4BAECC2516554B00B71E32 /* QueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
@@ -102,9 +106,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A2D42E9252488C500F241BA /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				7A2D42EA252488D200F241BA /* BinaryHeap.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
 		7A4BAEC625164C8F00B71E32 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				7A2D42E9252488C500F241BA /* Tree */,
 				7AE805AA251D97A1001034B6 /* LinkedList */,
 				7AE805A9251D9765001034B6 /* Stack */,
 				7AE805A8251D9757001034B6 /* Queue */,
@@ -235,6 +248,7 @@
 			children = (
 				E9304E262253C02000971FDE /* MergeSort.swift */,
 				E90324212270B81D00047CD0 /* CountingSort.swift */,
+				7A2D42EC252581CB00F241BA /* HeapSort.swift */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -394,12 +408,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2D42EB252488D200F241BA /* BinaryHeap.swift in Sources */,
 				7A6B61C8251AF3830017E26E /* Trie.swift in Sources */,
 				E982E19E224FC11000A6247D /* ViewController.swift in Sources */,
 				7AE805AC251D97AC001034B6 /* LinkedList.swift in Sources */,
 				7A6B61C3251AEE200017E26E /* QueueProtocol.swift in Sources */,
 				E982E1BD224FC13D00A6247D /* QuickSort.swift in Sources */,
 				E91C6D48229A9DDF003CCDF1 /* SortViewController.swift in Sources */,
+				7A2D42ED252581CB00F241BA /* HeapSort.swift in Sources */,
 				7A4BAECA25164F0A00B71E32 /* Queue.swift in Sources */,
 				E9304E2B2257A39200971FDE /* InsertionSort.swift in Sources */,
 				7A6B61C5251AF0D70017E26E /* ThreadSafeQueue.swift in Sources */,
