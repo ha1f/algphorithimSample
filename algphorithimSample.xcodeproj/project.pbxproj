@@ -25,6 +25,7 @@
 		7A6B61D1251AF42F0017E26E /* TrieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B61D0251AF42F0017E26E /* TrieTests.swift */; };
 		7A6B61D4251B0F4D0017E26E /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B61D3251B0F4D0017E26E /* BinarySearch.swift */; };
 		7A6B61D7251B23D30017E26E /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B61D6251B23D30017E26E /* BinarySearchTests.swift */; };
+		7AA6774F252FFF170029F3B6 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6774E252FFF170029F3B6 /* BinaryTree.swift */; };
 		7AE805A4251D8F43001034B6 /* EratosthenesSieve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE805A3251D8F43001034B6 /* EratosthenesSieve.swift */; };
 		7AE805A7251D9381001034B6 /* EratosthenesSieveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE805A6251D9381001034B6 /* EratosthenesSieveTests.swift */; };
 		7AE805AC251D97AC001034B6 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE805AB251D97AC001034B6 /* LinkedList.swift */; };
@@ -73,6 +74,7 @@
 		7A6B61D0251AF42F0017E26E /* TrieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrieTests.swift; sourceTree = "<group>"; };
 		7A6B61D3251B0F4D0017E26E /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		7A6B61D6251B23D30017E26E /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
+		7AA6774E252FFF170029F3B6 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		7AE805A3251D8F43001034B6 /* EratosthenesSieve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EratosthenesSieve.swift; sourceTree = "<group>"; };
 		7AE805A6251D9381001034B6 /* EratosthenesSieveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EratosthenesSieveTests.swift; sourceTree = "<group>"; };
 		7AE805AB251D97AC001034B6 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				7A2D42EA252488D200F241BA /* BinaryHeap.swift */,
+				7AA6774E252FFF170029F3B6 /* BinaryTree.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -369,9 +372,11 @@
 				TargetAttributes = {
 					E982E197224FC11000A6247D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1170;
 					};
 					E982E1AB224FC11200A6247D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1170;
 						TestTargetID = E982E197224FC11000A6247D;
 					};
 				};
@@ -432,6 +437,7 @@
 				E9304E2B2257A39200971FDE /* InsertionSort.swift in Sources */,
 				7A6B61C5251AF0D70017E26E /* ThreadSafeQueue.swift in Sources */,
 				7A6B61D4251B0F4D0017E26E /* BinarySearch.swift in Sources */,
+				7AA6774F252FFF170029F3B6 /* BinaryTree.swift in Sources */,
 				E982E19C224FC11000A6247D /* AppDelegate.swift in Sources */,
 				E90324222270B81D00047CD0 /* CountingSort.swift in Sources */,
 				7A4BAEC825164C9A00B71E32 /* Stack.swift in Sources */,
@@ -620,7 +626,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.algphorithimSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -637,7 +643,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.algphorithimSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -656,7 +662,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.algphorithimSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/algphorithimSample.app/algphorithimSample";
 			};
@@ -676,7 +682,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.algphorithimSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/algphorithimSample.app/algphorithimSample";
 			};
