@@ -10,6 +10,8 @@ import Foundation
 
 /// 選択ソート
 /// 残りの中からの最小を順番に探して、並べていく
+/// n個の要素について平均n/2個から最小を見つけるので常にO(n^2)
+/// 安定ソートではない
 func selectionSort(_ numbers: inout [Int]) {
     let numbersCount = numbers.count
     // currentOffsetより左側がソートされた状態になる

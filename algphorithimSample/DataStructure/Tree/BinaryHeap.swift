@@ -9,8 +9,10 @@
 import Foundation
 
 /// 最大ヒープ
+/// 「親>子」が必ず満たされるヒープ
 final class BinaryHeap<Element: Comparable>: BinaryTree<Element> {
     /// 要素を追加する
+    /// O (log n)
     func insert(_ element: Element) {
         let elementIndex = _array.count
         _array.append(element)
@@ -18,6 +20,7 @@ final class BinaryHeap<Element: Comparable>: BinaryTree<Element> {
     }
 
     /// rootを取り除く
+    /// O (log n)
     func removeRoot() -> Element? {
         if _array.isEmpty {
             return nil

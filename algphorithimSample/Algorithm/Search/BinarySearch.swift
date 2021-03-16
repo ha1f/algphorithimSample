@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// 二分探索
+/// O(log n)
 final class BinarySearch<Element: Comparable> {
     /// fromIndex <= i < toIndexの範囲でtargetを探索する。
     ///

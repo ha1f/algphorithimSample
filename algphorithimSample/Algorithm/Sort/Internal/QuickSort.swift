@@ -47,6 +47,9 @@ private func _quickSort(_ numbers: inout [Int], start: Int, end: Int) {
 
 /// クイックソート
 /// pivotより大きい組を右に、小さい組を左に分ける作業を再帰的に行う
+/// log n回、n個の大小比較を繰り返すのでO(n log n)
+/// 但しピボットが偏り続けた場合はO(n^n)
+/// 安定ソートではない
 func quickSort(_ numbers: inout [Int]) {
     guard !numbers.isEmpty else {
         return

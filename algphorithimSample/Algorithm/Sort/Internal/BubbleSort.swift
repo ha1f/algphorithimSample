@@ -8,6 +8,10 @@
 
 import Foundation
 
+/// バブルソート
+/// 隣同士を比較して、大小が入れ替わってたらswapを繰り返す
+/// それぞれの要素について残りの全要素との比較が必要なのでO(n^2)
+/// 安定ソートである
 func bubbleSort(_ numbers: inout [Int]) {
     let numbersCount = numbers.count
     for i in 0..<(numbersCount - 1) {

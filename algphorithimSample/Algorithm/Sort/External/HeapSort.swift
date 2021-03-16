@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// ヒープソート
+/// n個の要素をそれぞれ1/2log nで見つけて入れて、またn個の要素をそれぞれ1/2log nで取り出すので O(n log n)
 final class HeapSort {
     func sort<Element: Comparable>(elements: [Element]) -> [Element] {
         let heap = elements.reduce(into: BinaryHeap<Element>()) { (heap, element) in

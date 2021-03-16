@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// マージソート
+/// 平均log n回分割して、nでマージするので O(n log n)
 final class MergeSort {
     /// ２つのソート済みのArrayをあわせる。
     /// array1にarray2を混ぜる。
