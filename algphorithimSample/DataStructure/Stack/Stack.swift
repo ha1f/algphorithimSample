@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// パフォーマンスのため、後ろが先頭
 struct Stack<Element> {
     private var _elements: [Element]
 
@@ -29,5 +30,11 @@ struct Stack<Element> {
 
     func peek() -> Element? {
         _elements.last
+    }
+}
+
+extension Stack: Sequence {
+    func makeIterator() -> ReversedCollection<[Element]>.Iterator {
+        return _elements.reversed().makeIterator()
     }
 }

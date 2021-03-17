@@ -34,3 +34,9 @@ struct Queue<Element>: QueueProtocol {
         return _elements.removeFirst()
     }
 }
+
+extension Queue: Sequence {
+    func makeIterator() -> IndexingIterator<[Element]> {
+        _elements.makeIterator()
+    }
+}
