@@ -9,7 +9,7 @@
 import Foundation
 
 /// 左の部分木に含まれるデータはすべて小さく、右の部分木に含まれるデータはすべて大きい
-final class BinarySearchTree<Element: Comparable>: LinkingBinaryTree<Element> {
+class BinarySearchTree<Element: Comparable>: LinkingBinaryTree<Element> {
     func find(element: Element) -> Node? {
         guard let rootNode = root else {
             return nil
@@ -140,8 +140,13 @@ extension BinarySearchTree {
         guard let root = root else {
             return []
         }
+        return sorted(from: root)
+    }
+
+    /// 部分木に含まれる要素を小さい順に返す
+    func sorted(from node: Node) -> [Element] {
         var array: [Element] = []
-        _appendSorted(root, array: &array)
+        _appendSorted(node, array: &array)
         return array
     }
 

@@ -61,6 +61,8 @@ class ViewController: UIViewController {
         print(tree.iterate(using: .depthFirstNonRecursive))
         print(tree.iterate(using: .breadthFirst))
 
+
+
         
         let queue = CyclicQueue<Int>()
         queue.add(3)
@@ -73,6 +75,16 @@ class ViewController: UIViewController {
         print(queue.remove())
         print(queue.remove())
         print(queue.remove())
+
+
+        let goatTree = ScapegoatTree<Int>()
+        for i in (0..<30).shuffled() {
+            goatTree.insert(i)
+        }
+        print(goatTree.iterate(using: .depthFirst))
+        goatTree.rebuild()
+        print(goatTree.iterate(using: .depthFirst))
+        print(goatTree.sorted())
 //        print(MergeSort().sort([5, 3, 1, 10, 2, 4, 3]))
 //        print(MergeSort().sort([5, 3]))
 //        print(MergeSort().sort([3, 5, 1, 10, 2, 4, 3]))
