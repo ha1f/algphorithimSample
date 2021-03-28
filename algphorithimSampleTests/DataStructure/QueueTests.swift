@@ -37,11 +37,13 @@ class QueueTests: XCTestCase {
         _testIntQueue(queueBuilder: TwoStackQueue<Int>())
     }
 
-    func testThreadSafeQueue() {
-        _testIntQueue(queueBuilder: ThreadSafeQueue<Int>())
-    }
-
     func testCyclicQueue() {
         _testIntQueue(queueBuilder: CyclicQueue<Int>())
+    }
+
+    func testThreadSafeQueue() {
+        _testIntQueue(queueBuilder: ThreadSafeQueue(Queue<Int>()))
+        _testIntQueue(queueBuilder: ThreadSafeQueue(TwoStackQueue<Int>()))
+        _testIntQueue(queueBuilder: ThreadSafeQueue(CyclicQueue<Int>()))
     }
 }

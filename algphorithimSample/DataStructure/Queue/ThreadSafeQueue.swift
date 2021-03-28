@@ -9,9 +9,15 @@
 import Foundation
 
 /// isolation = .serializable
-struct ThreadSafeQueue<Element>: QueueProtocol {
-    private var _internalQueue: Queue<Element> = Queue()
+struct ThreadSafeQueue<Q: QueueProtocol>: QueueProtocol {
+    typealias Element = Q.Element
+
+    private var _internalQueue: Q
     private let _lock = NSLock()
+
+    init(_ queue: Q) {
+        _internalQueue = queue
+    }
 
     var isEmpty: Bool {
         _lock.lock()
