@@ -32,7 +32,7 @@ class TwoStackQueue<Element>: QueueProtocol {
 
     func remove() -> Element? {
         if !isInverted {
-            // 最後以外をstack1から2に逆順コピーする
+            // 一番最初に入れたデータを取りたいので、最後以外をstack1から2に逆順コピーする
             // 最後の要素はそのまま返す
             var lastElement: Element? = nil
             while true {
