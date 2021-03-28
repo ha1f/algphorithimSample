@@ -17,6 +17,9 @@
 		7A4BAECA25164F0A00B71E32 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BAEC925164F0A00B71E32 /* Queue.swift */; };
 		7A4BAECD2516554B00B71E32 /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BAECC2516554B00B71E32 /* QueueTests.swift */; };
 		7A4BAECF2516586100B71E32 /* TwoStackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BAECE2516586100B71E32 /* TwoStackQueue.swift */; };
+		7A5B236B2610674700409A86 /* BinarySearchTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5B236A2610674700409A86 /* BinarySearchTreeTests.swift */; };
+		7A5B237026106F5000409A86 /* LinkingBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5B236F26106F5000409A86 /* LinkingBinaryTree.swift */; };
+		7A5B237626106F6A00409A86 /* LinkingBinaryTreeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5B237526106F6A00409A86 /* LinkingBinaryTreeIterator.swift */; };
 		7A6B61C3251AEE200017E26E /* QueueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B61C2251AEE200017E26E /* QueueProtocol.swift */; };
 		7A6B61C5251AF0D70017E26E /* ThreadSafeQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B61C4251AF0D70017E26E /* ThreadSafeQueue.swift */; };
 		7A6B61C8251AF3830017E26E /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B61C7251AF3830017E26E /* Trie.swift */; };
@@ -26,7 +29,7 @@
 		7A6B61D4251B0F4D0017E26E /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B61D3251B0F4D0017E26E /* BinarySearch.swift */; };
 		7A6B61D7251B23D30017E26E /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B61D6251B23D30017E26E /* BinarySearchTests.swift */; };
 		7AA6774F252FFF170029F3B6 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA6774E252FFF170029F3B6 /* BinaryTree.swift */; };
-		7AA677532530078D0029F3B6 /* LinkingBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677522530078D0029F3B6 /* LinkingBinaryTree.swift */; };
+		7AA677532530078D0029F3B6 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677522530078D0029F3B6 /* BinarySearchTree.swift */; };
 		7AE805A4251D8F43001034B6 /* EratosthenesSieve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE805A3251D8F43001034B6 /* EratosthenesSieve.swift */; };
 		7AE805A7251D9381001034B6 /* EratosthenesSieveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE805A6251D9381001034B6 /* EratosthenesSieveTests.swift */; };
 		7AE805AC251D97AC001034B6 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE805AB251D97AC001034B6 /* LinkedList.swift */; };
@@ -67,6 +70,9 @@
 		7A4BAEC925164F0A00B71E32 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		7A4BAECC2516554B00B71E32 /* QueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
 		7A4BAECE2516586100B71E32 /* TwoStackQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoStackQueue.swift; sourceTree = "<group>"; };
+		7A5B236A2610674700409A86 /* BinarySearchTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTreeTests.swift; sourceTree = "<group>"; };
+		7A5B236F26106F5000409A86 /* LinkingBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkingBinaryTree.swift; sourceTree = "<group>"; };
+		7A5B237526106F6A00409A86 /* LinkingBinaryTreeIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkingBinaryTreeIterator.swift; sourceTree = "<group>"; };
 		7A6B61C2251AEE200017E26E /* QueueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueProtocol.swift; sourceTree = "<group>"; };
 		7A6B61C4251AF0D70017E26E /* ThreadSafeQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafeQueue.swift; sourceTree = "<group>"; };
 		7A6B61C7251AF3830017E26E /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
@@ -76,7 +82,7 @@
 		7A6B61D3251B0F4D0017E26E /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		7A6B61D6251B23D30017E26E /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
 		7AA6774E252FFF170029F3B6 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
-		7AA677522530078D0029F3B6 /* LinkingBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkingBinaryTree.swift; sourceTree = "<group>"; };
+		7AA677522530078D0029F3B6 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		7AE805A3251D8F43001034B6 /* EratosthenesSieve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EratosthenesSieve.swift; sourceTree = "<group>"; };
 		7AE805A6251D9381001034B6 /* EratosthenesSieveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EratosthenesSieveTests.swift; sourceTree = "<group>"; };
 		7AE805AB251D97AC001034B6 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
@@ -121,9 +127,9 @@
 		7A2D42E9252488C500F241BA /* Tree */ = {
 			isa = PBXGroup;
 			children = (
+				7A5B236E26106F4500409A86 /* BinarySearchTree */,
 				7A2D42EA252488D200F241BA /* BinaryHeap.swift */,
 				7AA6774E252FFF170029F3B6 /* BinaryTree.swift */,
-				7AA677522530078D0029F3B6 /* LinkingBinaryTree.swift */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -144,8 +150,19 @@
 			children = (
 				7A4BAECC2516554B00B71E32 /* QueueTests.swift */,
 				7AE805AD251DA20E001034B6 /* LinkedListTests.swift */,
+				7A5B236A2610674700409A86 /* BinarySearchTreeTests.swift */,
 			);
 			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		7A5B236E26106F4500409A86 /* BinarySearchTree */ = {
+			isa = PBXGroup;
+			children = (
+				7AA677522530078D0029F3B6 /* BinarySearchTree.swift */,
+				7A5B236F26106F5000409A86 /* LinkingBinaryTree.swift */,
+				7A5B237526106F6A00409A86 /* LinkingBinaryTreeIterator.swift */,
+			);
+			path = BinarySearchTree;
 			sourceTree = "<group>";
 		};
 		7A6B61C6251AF3450017E26E /* Algorithm */ = {
@@ -446,12 +463,14 @@
 				7A4BAEC825164C9A00B71E32 /* Stack.swift in Sources */,
 				7A6B61CD251AF3E50017E26E /* DecomposedStringProtocol.swift in Sources */,
 				7A2D42F52526348F00F241BA /* intpow.swift in Sources */,
+				7A5B237026106F5000409A86 /* LinkingBinaryTree.swift in Sources */,
 				7AE805A4251D8F43001034B6 /* EratosthenesSieve.swift in Sources */,
-				7AA677532530078D0029F3B6 /* LinkingBinaryTree.swift in Sources */,
+				7AA677532530078D0029F3B6 /* BinarySearchTree.swift in Sources */,
 				E9304E252253BCFE00971FDE /* SelectionSort.swift in Sources */,
 				E9304E272253C02000971FDE /* MergeSort.swift in Sources */,
 				E9304E2922579FFF00971FDE /* BubbleSort.swift in Sources */,
 				7A4BAECF2516586100B71E32 /* TwoStackQueue.swift in Sources */,
+				7A5B237626106F6A00409A86 /* LinkingBinaryTreeIterator.swift in Sources */,
 				7A2D42F12526315B00F241BA /* gcd.swift in Sources */,
 				7A6B61CB251AF3BD0017E26E /* Trie+Node.swift in Sources */,
 			);
@@ -467,6 +486,7 @@
 				7A6B61D1251AF42F0017E26E /* TrieTests.swift in Sources */,
 				7AE805A7251D9381001034B6 /* EratosthenesSieveTests.swift in Sources */,
 				E982E1B1224FC11200A6247D /* algphorithimSampleTests.swift in Sources */,
+				7A5B236B2610674700409A86 /* BinarySearchTreeTests.swift in Sources */,
 				7AE805AE251DA20E001034B6 /* LinkedListTests.swift in Sources */,
 				7A4BAECD2516554B00B71E32 /* QueueTests.swift in Sources */,
 			);

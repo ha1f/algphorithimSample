@@ -50,6 +50,16 @@ class ViewController: UIViewController {
         var array1 = [5, 3, 1, 10, 2, 4, 3]
         insertionSort(&array1)
         print(array1)
+
+
+        let tree = BinarySearchTree<Int>()
+        for i in (0..<30).shuffled() {
+            tree.insert(i)
+        }
+
+        print(tree.iterate(using: .depthFirst))
+        print(tree.iterate(using: .depthFirstNonRecursive))
+        print(tree.iterate(using: .breadthFirst))
         
 
 //        print(MergeSort().sort([5, 3, 1, 10, 2, 4, 3]))
