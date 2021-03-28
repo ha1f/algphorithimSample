@@ -101,15 +101,27 @@ final class BinarySearchTree<Element: Comparable>: LinkingBinaryTree<Element> {
         // (と、性質を維持することができる)
         let minDescendantNode = _minNode(from: rightNode)
 
-        // 付け替える場合
-//        minDescendantNode.parent = parent
-//        minDescendantNode.left = leftNode
-//        minDescendantNode.right = rightNode
-//        leftNode.parent = minDescendantNode
-//        rightNode.parent = minDescendantNode
-
         // 構造は変わらないので値だけコピーしてくる
         node.element = minDescendantNode.element
+        _splice(node: minDescendantNode)
+    }
+
+    /// その要素を飛ばす
+    private func _splice(node: Node) {
+        guard let parent = node.parent else {
+            assert(node === root)
+            root = nil
+            return
+        }
+        assert(node.left == nil || node.right == nil)
+        let child = node.left ?? node.right
+        if node === parent.left {
+            parent.left = child
+        } else {
+            assert(node === parent.right)
+            parent.right = child
+        }
+        child?.parent = parent
     }
 
     private func _minNode(from node: Node) -> Node {

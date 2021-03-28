@@ -60,6 +60,7 @@ class ViewController: UIViewController {
         print(tree.iterate(using: .depthFirst))
         print(tree.iterate(using: .depthFirstNonRecursive))
         print(tree.iterate(using: .breadthFirst))
+
         
 
 //        print(MergeSort().sort([5, 3, 1, 10, 2, 4, 3]))
