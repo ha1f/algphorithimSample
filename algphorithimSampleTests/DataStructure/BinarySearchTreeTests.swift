@@ -86,6 +86,11 @@ final class BinarySearchTreeTests: XCTestCase {
             print(error)
         }
     }
+
+    func testSorted() {
+        let tree = _buildExampleTree()
+        XCTAssertEqual(tree.sorted(), Array((0..<30)))
+    }
 }
 
 private extension BinarySearchTree {

@@ -17,10 +17,6 @@ final class BinarySearchTree<Element: Comparable>: LinkingBinaryTree<Element> {
         return _find(element: element, from: rootNode)
     }
 
-    func contains(_ element: Element) -> Bool {
-        find(element: element) != nil
-    }
-
     private func _find(element: Element, from node: Node) -> Node? {
         if element == node.element {
             return node
@@ -129,5 +125,35 @@ final class BinarySearchTree<Element: Comparable>: LinkingBinaryTree<Element> {
             return node
         }
         return _minNode(from: leftNode)
+    }
+}
+
+extension BinarySearchTree {
+    func contains(_ element: Element) -> Bool {
+        find(element: element) != nil
+    }
+}
+
+extension BinarySearchTree {
+    /// 小さい順に返す
+    func sorted() -> [Element] {
+        guard let root = root else {
+            return []
+        }
+        var array: [Element] = []
+        _appendSorted(root, array: &array)
+        return array
+    }
+
+    /// node以下のsubtreeの要素をソートして追加する
+    /// arrayを返してそれを連結をしたほうが実装は楽だが、パフォーマンスのためinoutにしている
+    private func _appendSorted(_ node: Node, array: inout [Element]) {
+        if let left = node.left {
+            _appendSorted(left, array: &array)
+        }
+        array.append(node.element)
+        if let right = node.right {
+            _appendSorted(right, array: &array)
+        }
     }
 }
