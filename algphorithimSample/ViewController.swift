@@ -62,7 +62,17 @@ class ViewController: UIViewController {
         print(tree.iterate(using: .breadthFirst))
 
         
-
+        let queue = CyclicQueue<Int>()
+        queue.add(3)
+        queue.add(5)
+        print(queue.remove())
+        queue.add(50)
+        queue.add(4)
+        print(queue.remove())
+        print(queue.remove())
+        print(queue.remove())
+        print(queue.remove())
+        print(queue.remove())
 //        print(MergeSort().sort([5, 3, 1, 10, 2, 4, 3]))
 //        print(MergeSort().sort([5, 3]))
 //        print(MergeSort().sort([3, 5, 1, 10, 2, 4, 3]))

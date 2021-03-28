@@ -31,6 +31,7 @@ struct Queue<Element>: QueueProtocol {
         guard !_elements.isEmpty else {
             return nil
         }
+        // 先頭の削除にコストがかかる
         return _elements.removeFirst()
     }
 }

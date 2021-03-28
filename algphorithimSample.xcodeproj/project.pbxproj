@@ -20,6 +20,7 @@
 		7A5B236B2610674700409A86 /* BinarySearchTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5B236A2610674700409A86 /* BinarySearchTreeTests.swift */; };
 		7A5B237026106F5000409A86 /* LinkingBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5B236F26106F5000409A86 /* LinkingBinaryTree.swift */; };
 		7A5B237626106F6A00409A86 /* LinkingBinaryTreeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5B237526106F6A00409A86 /* LinkingBinaryTreeIterator.swift */; };
+		7A5B237E2610B8F900409A86 /* CyclicQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5B237D2610B8F900409A86 /* CyclicQueue.swift */; };
 		7A6B61C3251AEE200017E26E /* QueueProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B61C2251AEE200017E26E /* QueueProtocol.swift */; };
 		7A6B61C5251AF0D70017E26E /* ThreadSafeQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B61C4251AF0D70017E26E /* ThreadSafeQueue.swift */; };
 		7A6B61C8251AF3830017E26E /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B61C7251AF3830017E26E /* Trie.swift */; };
@@ -73,6 +74,7 @@
 		7A5B236A2610674700409A86 /* BinarySearchTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTreeTests.swift; sourceTree = "<group>"; };
 		7A5B236F26106F5000409A86 /* LinkingBinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkingBinaryTree.swift; sourceTree = "<group>"; };
 		7A5B237526106F6A00409A86 /* LinkingBinaryTreeIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkingBinaryTreeIterator.swift; sourceTree = "<group>"; };
+		7A5B237D2610B8F900409A86 /* CyclicQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclicQueue.swift; sourceTree = "<group>"; };
 		7A6B61C2251AEE200017E26E /* QueueProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueProtocol.swift; sourceTree = "<group>"; };
 		7A6B61C4251AF0D70017E26E /* ThreadSafeQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadSafeQueue.swift; sourceTree = "<group>"; };
 		7A6B61C7251AF3830017E26E /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				7A4BAECE2516586100B71E32 /* TwoStackQueue.swift */,
 				7A6B61C2251AEE200017E26E /* QueueProtocol.swift */,
 				7A6B61C4251AF0D70017E26E /* ThreadSafeQueue.swift */,
+				7A5B237D2610B8F900409A86 /* CyclicQueue.swift */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				7A5B237626106F6A00409A86 /* LinkingBinaryTreeIterator.swift in Sources */,
 				7A2D42F12526315B00F241BA /* gcd.swift in Sources */,
 				7A6B61CB251AF3BD0017E26E /* Trie+Node.swift in Sources */,
+				7A5B237E2610B8F900409A86 /* CyclicQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
