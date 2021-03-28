@@ -26,3 +26,16 @@ class LinkingBinaryTree<Element> {
 
     var root: Node?
 }
+
+extension LinkingBinaryTree {
+    func size() -> Int {
+        return size(from: root)
+    }
+
+    func size(from node: Node?) -> Int {
+        guard let node = node else {
+            return 0
+        }
+        return size(from: node.left) + size(from: node.right) + 1
+    }
+}
